@@ -1,0 +1,51 @@
+/* Background (might change if each page have different background) */ 
+body{
+    text-align: center; /*this might change since every page is centered and we probably don't want that */
+    background: linear-gradient(to top,rgb(235, 94, 59),rgb(214, 153, 146));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* [[[Index page]]] */
+
+/* title */
+#head1{
+    font-family: "press start 2p";
+    border-style: dotted;
+    border-width: 10px;
+    border-color: rgb(212, 31, 11);
+    display: inline-block;
+    padding: 5px;
+}
+
+/* paragraph 1 sentence */
+#p1{
+    font-family: "Anton";
+}
+
+/* disclaimer message */
+#d1 {
+    font-family: "press start 2p";
+    color:rgb(82, 6, 153);
+
+}
+
+/* button */
+#button1{
+    margin-bottom: 100px;
+    font-family: "Anton";
+    font-size: 25px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background-color: rgb(76, 175, 80);
+    color: white;
+}
+
+/* [[[Page 2]]] */
+
+/* work in progress message */
+#w1{
+    color: rgb(16,45, 232);
+}
+
+
