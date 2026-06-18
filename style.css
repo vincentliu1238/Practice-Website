@@ -26,7 +26,7 @@ body{
 /* disclaimer message */
 #d1 {
     font-family: "press start 2p";
-    color:rgb(82, 6, 153);
+    color:rgb(92,6,153);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -38,10 +38,10 @@ body{
     font-size: 25px;
     padding: 10px;
     border-radius: 18px;
-    background-color: rgb(76, 175, 80);
+    background-color: rgb(76,175,80);
     color: white;
     position: relative;
-    bottom: -600px;
+    bottom: -28px;
 }
 
 .button1:hover {
