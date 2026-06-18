@@ -28,6 +28,21 @@ body{
     text-align: center;
 }
 
+.text{
+    font-size: 10px;
+    letter-spacing: 2px;
+    border-bottom: 30px solid transparent;
+    display: inline-block;
+    color: rgb(82, 6, 153);
+    font-family: "press start 2p";
+    animation: typing 2s steps(40) alternate;
+}
+
+@keyframes typing{
+    from {width: 0%;}
+    to {width: 50%;}
+}
+
 .btn{
     display: inline-block;
     padding: 10px 20px;
