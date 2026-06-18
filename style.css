@@ -1,50 +1,77 @@
-/* Background (might change if each page have different background) */ 
+/* [[[Index page]]] */
 body{
-    text-align: center; /*this might change since every page is centered and we probably don't want that */
-    background: linear-gradient(to right,rgb(235, 94, 59),rgb(214, 153, 146), rgb(235, 94, 59));
+    min-height: 800px;
+    background: linear-gradient(to bottom, rgb(48, 45, 45), rgb(131, 131, 255), rgb(199, 229, 251));
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* [[[Index page]]] */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 
-/* title */
-#h1{
+.textbox{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: "press start 2p";
-    border-style: solid;
-    border-width: 10px;
-    border-color: rgb(212, 31, 11);
-    display: inline-block;
-    padding: 5px;
+    color:rgb(82, 6, 153);
+    text-align: center;
 }
 
-/* paragraph 1 sentence */
-#p1{
-    font-family: "Anton";
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "press start 2p";
+    color: rgb(82, 6, 153);
+    background-color: transparent;
+    border: 2px solid rgb(82, 6, 153);
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.btn:hover {
+    background-color: rgb(82, 6, 153);
+    color: white;
+}
+
+/*Underline animation for button*/
+.btn:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.btn:hover:after{
+    width: 100%;
+}
+
+.btn:active {
+    background-color: rgb(82, 6, 153);
+    color: white;
+    transform: translateY(2px);
+}
+
 
 /* disclaimer message */
 #d1 {
+    text-align: center;
     font-family: "press start 2p";
     color:rgb(82, 6, 153);
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* button */
-.button1{          
-    font-family: "Anton";
-    font-size: 25px;
-    padding: 10px;
-    border-radius: 18px;
-    background-color: rgb(76, 175, 80);
-    color: white;
-    position: relative;
-    bottom: -600px;
-}
-
-.button1:hover {
-    background-color: rgb(0, 0, 0);
-    cursor: pointer;
 }
