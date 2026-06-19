@@ -35,7 +35,8 @@ body{
 
 .box:hover{
    transform: scale(1.3);
-    transition: transform 0.3s ease;
+   transition: transform 0.3s ease;
+   filter: drop-shadow(0 0 10px gold) brightness(1.2);
 }
 
 .btn{
@@ -74,4 +75,36 @@ body{
 .boxbutton:hover {
     background-color: rgb(82, 6, 153);
     color: white;
+}
+
+
+.picture img:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px gold) brightness(1.2);
+} 
+
+.pic1{
+    position:absolute;
+    top: 60%;
+    left:80%;
+}
+
+.pic2{
+    position:absolute;
+    top:10%;
+    left:85%;
+}
+
+.pic3{
+    position:absolute;
+    top:5%;
+    left:10%;
+}
+
+.pic4{
+    position:absolute;
+    top:70%;
+    left:15%;
 }
