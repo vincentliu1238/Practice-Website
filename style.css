@@ -17,6 +17,10 @@ body{
     position: relative;
 }
 
+.highlight{
+    color: rgb(255, 204, 17);
+}
+
 .textbox{
     width: 90%;
     position: absolute;
