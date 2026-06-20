@@ -60,6 +60,20 @@ body{
 .btn:hover {
     background-color: rgb(82, 6, 153);
     color: white;
+    filter: drop-shadow(0 0 10px gold) brightness(1.2);
+}
+
+.btn:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.btn:hover:after{
+    width: 100%;
 }
 
 .boxbutton{
