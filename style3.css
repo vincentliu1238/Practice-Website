@@ -60,7 +60,6 @@ body{
 .btn:hover {
     background-color: rgb(82, 6, 153);
     color: white;
-    filter: drop-shadow(0 0 10px gold) brightness(1.2);
 }
 
 .btn:after{
