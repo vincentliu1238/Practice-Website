@@ -10,6 +10,7 @@ body{
 }
 
 .title_effect{
+    color:aliceblue;
     text-decoration: underline;
     text-shadow: 
     0 0 5px cyan,
@@ -47,7 +48,7 @@ body{
 .box:hover{
    transform: scale(1.3);
    transition: transform 0.3s ease;
-   filter: drop-shadow(0 0 10px gold) brightness(1.2);
+   filter: drop-shadow(0 0 10px aliceblue) brightness(1.2);
 }
 
 .btn{
