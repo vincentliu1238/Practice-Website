@@ -18,25 +18,24 @@ body{
 }
 
 .title_effect{
-    text-decoration: underline;
     text-shadow: 
-    0 0 5px cyan,
-    0 0 10px cyan,
-    0 0 15px cyan,
-    0 0 20px cyan,
-    0 0 30px cyan,
-    0 0 40px cyan;
+    0 0 5px rgb(87, 87, 255),
+    0 0 10px rgb(87, 87, 227),
+    0 0 15px rgb(111, 111, 219),
+    0 0 20px rgb(142, 142, 228),
+    0 0 30px rgb(131, 131, 255),
+    0 0 40px rgb(131, 131, 255);
 }
 
 .highlight{
     color: rgb(255, 204, 17);
     text-shadow: 
-    0 0 5px white,
-    0 0 10px white,
-    0 0 15px white,
-    0 0 20px white,
-    0 0 30px white,
-    0 0 40px white;
+    0 0 5px aliceblue,
+    0 0 10px aliceblue,
+    0 0 15px aliceblue,
+    0 0 20px aliceblue,
+    0 0 30px aliceblue,
+    0 0 40px aliceblue;
 }
 
 .textbox{
@@ -75,6 +74,19 @@ body{
     border: 2px solid rgb(82, 6, 153);
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.btn:active {
+    background-color: rgb(82, 6, 153);
+    color: white;
+    transform: scale(0.95);
+}
+
+.btn:hover {
+    background-color: rgb(82, 6, 153);
+    color: white;
+    filter: drop-shadow(0 0 10px aliceblue) brightness(1.2);
     text-shadow: 
     0 0 5px cyan,
     0 0 10px cyan,
@@ -82,13 +94,6 @@ body{
     0 0 20px cyan,
     0 0 30px cyan,
     0 0 40px cyan;
-
-}
-
-.btn:hover {
-    background-color: rgb(82, 6, 153);
-    color: white;
-    filter: drop-shadow(0 0 10px gold) brightness(1.2);
 }
 
 /*Underline animation for button*/
@@ -105,12 +110,6 @@ body{
     width: 100%;
 }
 
-.btn:active {
-    background-color: rgb(82, 6, 153);
-    color: white;
-    transform: translateY(2px);
-}
-
 
 /* disclaimer message */
 #d1 {
@@ -120,11 +119,6 @@ body{
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-shadow: 
-    0 0 5px pink,
-    0 0 10px pink,
-    0 0 20px pink,
-    0 0 30px pink
 }
 
 
