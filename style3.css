@@ -17,15 +17,6 @@ body{
     color:rgb(82, 6, 153);
 }
 
-.reel{
-    width: 200px;
-    height: auto;
-    z-index:2;
-    position:absolute;
-    box-sizing: border-box;
-    border:none;
-}
-
 .slot-row{
     display:flex;
     gap:10px;
@@ -51,6 +42,11 @@ body{
     border-radius: 20px;
     display: inline-block;
 }
+
+#slot-images{
+    width: 100%;
+    height: 100%;
+} 
 
 .slotbtns{
     display: flex;
