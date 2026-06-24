@@ -88,12 +88,12 @@ body{
     color: white;
     filter: drop-shadow(0 0 10px aliceblue) brightness(1.2);
     text-shadow: 
-    0 0 5px cyan,
-    0 0 10px cyan,
-    0 0 15px cyan,
-    0 0 20px cyan,
-    0 0 30px cyan,
-    0 0 40px cyan;
+    0 0 5px gold,
+    0 0 10px gold,
+    0 0 15px gold,
+    0 0 20px gold,
+    0 0 30px gold,
+    0 0 40px gold;
 }
 
 /*Underline animation for button*/
