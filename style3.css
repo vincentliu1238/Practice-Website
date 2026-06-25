@@ -19,13 +19,13 @@ body{
 
 .slot-row{
     display:flex;
-    gap:10px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     
 }
 
-.slot-window{
+.slot-window {
     width: 200px;
     height: 200px;
     overflow:hidden;
@@ -43,10 +43,14 @@ body{
     display: inline-block;
 }
 
-#slot-images{
+.slot-images{
     width: 100%;
     height: 100%;
 } 
+
+.slot-images img{
+    background-color: white;
+}
 
 .slotbtns{
     display: flex;
