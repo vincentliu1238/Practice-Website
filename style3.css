@@ -9,6 +9,32 @@ body{
     align-items: center;
 }
 
+.slot-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result{
+    font-size: 32px;
+    font-weight: bold;
+    color: gold;
+    margin-bottom: 20px;
+    min-height: 40px; 
+    animation: result 1.5s infinite alternate;
+}
+
+@keyframes result{
+  from {
+    text-shadow: 0 0 5px whitesmoke, 0 0 10px whitesmoke;
+  }
+  to {
+    text-shadow: 0 0 15px whitesmoke, 0 0 20px whitesmoke, 0 0 25px whitesmoke;
+  }
+}
+
+
+
 .textbox{
     position: relative;
     width: 100px;
