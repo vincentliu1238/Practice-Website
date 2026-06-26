@@ -1,4 +1,6 @@
 function spinReels() {
+    const result = document.getElementById("result"); //result variable for win/lose message
+    result.style.visibility = "hidden"; //keep the result message hidden
     const numberOfReels = 5;
     const display = document.querySelectorAll('.slot-images');
     const imageNames = ['7.png', 'banana.png', 'bar.png', 'bell.png', 'cherry.png', 'grape.png', 'lemon.png', 'orange.png', 'watermelon.png'];
@@ -7,7 +9,6 @@ function spinReels() {
     const frames = Math.floor(animationDuration / frameInterval); // 1.2 seconds of animation (fps)
     let currentFrame = 0; //Starting frame
     let win = false; //Win condition
-    let count = 0; 
 
     const intervalId = setInterval(() => { //setInterval => Timer
         for (let i = 0; i < numberOfReels; i++) { //Generates images (works similar to a dice)
@@ -21,29 +22,27 @@ function spinReels() {
 
             clearInterval(intervalId); //Stops the timer (setInterval)
             const random = [];
+
             for (let i = 0; i < numberOfReels; i++) { //Same generation for random images as the above
                 const randomIndex = Math.floor(Math.random() * imageNames.length);
-                
                 random.push(randomIndex);
-                for(let i = 0; i < random.length; i++){
-                    for(let j = 1; j < random.length; j++){ //Check if player has won (Incomplete)
-                        if(i == j){
-                            count++;
-                        }
-                    }
-                }
+                display[i].innerHTML = `<img src="Slot Machine Images/${imageNames[randomIndex]}">`;
+            }
 
-                if(count == 5){
-                    win = true;
-                }
-
-                display[i].innerHTML = `<img src="Slot Machine Images/${imageNames[randomIndex]}">`; //Displays final image
-
-                if(win == true){
-                    document.getElementById("").textContent = "You Win!"; //Display Win (Currently Incomplete)
+            win = true; //setting win as true 
+            for(let i=1; i< random.length; i++){ //loop through each item
+                if(random[i] != random[0]){ //check if every other item is the same as the first item (if all are the same: win stays true)
+                    win = false;  //if the loop finds that one item does not equal to the first item, then win is now false
+                    break;
                 }
             }
 
+            if(win){  //if all items are the same, display the winning message
+                result.textContent = "You Win!"; 
+            } else{ //if all items are not the same, display the losing message
+                result.textContent = "You Lose!";
+            }
+            result.style.visibility = "visible"; //display the message
         }
     }, frameInterval); //Prolongs the animation else it would look like an instant generation
 }
@@ -54,4 +53,6 @@ window.onload = function() {
     for (let i = 0; i < displays.length; i++) {
         displays[i].innerHTML = '<img src="Slot Machine Images/question mark.png">'; //Displays question marks before using
     }
+     document.getElementById("result").style.visibility = "hidden"; //on load of the slot machine page, keep the result message hidden
 };
+
